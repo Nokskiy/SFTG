@@ -1,0 +1,20 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:SFTG.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="SFTG.Views.MainView"
+             x:DataType="vm:MainViewModel">
+  <Design.DataContext>
+    <vm:MainViewModel />
+  </Design.DataContext>
+	<Canvas>
+		<Rectangle Fill="Black" Width="10000" Height="10000" />
+		<Border BorderBrush="Black" BorderThickness="1" Padding="250,150">
+			<Image Source="/Assets/settings_icon.png" Width="100" />
+		</Border>
+		<TextBlock Text="Settings"
+			Foreground="White" TextAlignment="Center" FontSize="30" Padding="245,250" FontFamily="{StaticResource Monospace}" LetterSpacing="1" />
+	</Canvas>
+</UserControl>
