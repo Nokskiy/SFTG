@@ -1,6 +1,6 @@
-﻿using Avalonia.Controls;
+using Avalonia.Controls;
 
-namespace SFTG.Views;
+namespace SFTG;
 
 public partial class MainWindow : Window
 {
