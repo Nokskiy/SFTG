@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using NeoSimpleLogger;
 using System;
+using SFTG.API;
 
 namespace SFTG;
 
@@ -12,6 +13,7 @@ class Program
     public static void Main(string[] args)
     {
         ConsoleLogger.LogInformation("Program was been launched");
+        FileManager.SaveConfiguration(new Configuration(new Configuration.VideoStruct()));
         BuildAvaloniaApp()
                 .StartWithClassicDesktopLifetime(args);
     }
